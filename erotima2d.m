@@ -1,0 +1,12 @@
+mse1 = immse(y, xq2lloyd);
+mse2 = immse(y, xq4lloyd);
+mse3 = immse(y, xq6lloyd);
+mse4 = immse(y, centers4(xq2my));
+mse5 = immse(y, centers5(xq4my));
+mse6 = immse(y, centers6(xq6my));
+fprintf(1, '\nThe Mean Square Error of Lloyd_Max, Source B, for N=2 is: %f\n', mse1);
+fprintf(1, 'The Mean Square Error of my_quantizer, Source B, for N=2 is: %f\n', mse4);
+fprintf(1, '\nThe Mean Square Error of Lloyd_Max, Source B, for N=4 is: %f\n', mse2);
+fprintf(1, 'The Mean Square Error of my_quantizer, Source B, for N=4 is: %f\n', mse5);
+fprintf(1, '\nThe Mean Square Error of Lloyd_Max, Source B, for N=6 is: %f\n', mse3);
+fprintf(1, 'The Mean Square Error of my_quantizer, Source B, for N=6 is: %f\n', mse6);
